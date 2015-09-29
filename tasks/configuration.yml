@@ -51,6 +51,7 @@
     - section:  DEFAULT
       option:   auth_strategy
       value:    keystone
+    # RabbitMQ
     - section:  DEFAULT
       option:   rpc_backend
       value:    neutron.openstack.common.rpc.impl_kombu
@@ -63,6 +64,18 @@
     - section:  DEFAULT
       option:   rabbit_password
       value:    "{{ neutron_rabbit_pass }}"
+    - section:  DEFAULT
+      option:   rabbit_virtual_host
+      value:    "{{ neutron_rabbit_virtual_host }}"
+    - section:  DEFAULT
+      option:   rabbit_retry_interval
+      value:    "{{ neutron_rabbit_retry_interval }}"
+    - section:  DEFAULT
+      option:   rabbit_hosts
+      value:    "{{ neutron_rabbit_hosts }}"
+    - section:  DEFAULT
+      option:   rabbit_ha_queues
+      value:    "{{ neutron_rabbit_ha_queues }}"
     - section:  DEFAULT
       option:   notify_nova_on_port_status_changes
       value:    True
