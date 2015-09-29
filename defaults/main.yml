@@ -21,6 +21,7 @@
 neutron_server_hostname: localhost
 neutron_user: neutron
 neutron_pass: neutron_pass_default
+neutron_bind_host: 0.0.0.0
 neutron_port: 9696
 neutron_protocol: http
 neutron_log_dir: /var/log/neutron
