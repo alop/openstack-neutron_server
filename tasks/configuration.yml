@@ -54,6 +54,9 @@
     - section:  DEFAULT
       option:   auth_strategy
       value:    keystone
+    - section:  DEFAULT
+      option:   api_paste_config
+      value:    "{{ neutron_api_paste }}"
     # RabbitMQ
     - section:  DEFAULT
       option:   rpc_backend

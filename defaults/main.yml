@@ -25,6 +25,7 @@ neutron_bind_host: 0.0.0.0
 neutron_port: 9696
 neutron_protocol: http
 neutron_log_dir: /var/log/neutron
+neutron_api_paste: /usr/share/neutron/api-paste.ini
 
 # Keystone
 keystone_admin_port: 35357
