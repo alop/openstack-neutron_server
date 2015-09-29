@@ -56,13 +56,13 @@
       value:    neutron.openstack.common.rpc.impl_kombu
     - section:  DEFAULT
       option:   rabbit_host
-      value:    "{{ rabbit_hostname }}"
+      value:    "{{ neutron_rabbit_hostname }}"
     - section:  DEFAULT
       option:   rabbit_userid
-      value:    "{{ rabbit_username }}"
+      value:    "{{ neutron_rabbit_username }}"
     - section:  DEFAULT
       option:   rabbit_password
-      value:    "{{ rabbit_pass }}"
+      value:    "{{ neutron_rabbit_pass }}"
     - section:  DEFAULT
       option:   notify_nova_on_port_status_changes
       value:    True
