@@ -134,4 +134,4 @@
       option:   admin_password
       value:    "{{ neutron_pass }}"
   notify:
-    - Reload Neutron server
+    - Restart Neutron server
