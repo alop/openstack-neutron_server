@@ -115,6 +115,12 @@
     - section:  DEFAULT
       option:   log_dir
       value:    "{{ neutron_log_dir }}"
+    - section:  DEFAULT
+      option:   log_debug
+      value:    "{{ neutron_log_debug }}"
+    - section:  DEFAULT
+      option:   log_verbose
+      value:    "{{ neutron_log_verbose }}"
     - section:  keystone_authtoken
       option:   auth_uri
       value:    "{{ keystone_protocol }}://{{ keystone_hostname }}:{{ keystone_port }}"
