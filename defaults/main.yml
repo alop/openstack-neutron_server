@@ -51,6 +51,6 @@ neutron_rabbit_pass: rabbit_pass_default
 neutron_rabbit_virtual_host: /
 neutron_rabbit_retry_interval: 1
 neutron_rabbit_port: 5672
-neutron_rabbit_hosts: "{{ neutron_rabbit_host }}:{{ neutron_rabbit_port }}"
+neutron_rabbit_hosts: "{{ neutron_rabbit_hostname }}:{{ neutron_rabbit_port }}"
 neutron_rabbit_ha_queues: False
 
